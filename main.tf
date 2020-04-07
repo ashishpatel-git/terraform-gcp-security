@@ -19,7 +19,7 @@ resource "google_organization_policy" "restrict_vm_external_ip" {
     }
   }
 }
-resource "google_organization_policy" "allow_only_policy_memebrs_domains" {
+resource "google_organization_policy" "allow_only_policy_member_domains" {
   org_id     = "<your_org_id>"
   constraint = "constraints/iam.allowedPolicyMemberDomains"
   list_policy {
